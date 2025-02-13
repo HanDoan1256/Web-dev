@@ -1,0 +1,223 @@
+/*Body*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    background: #2c40c6;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li .active {
+    color: yellow;
+}
+
+/* Banner */
+.apply-banner {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.apply-banner h1 span {
+    color: yellow;
+}
+
+.apply-banner button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+/*Application Form*/
+
+.application-form {
+    background: #111;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: none;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+fieldset {
+    border: none; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Skill List */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.skills input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+footer p {
+    font-size: 24px;
+    color: gray;
+    margin: 5px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+    font-family: Helvetica;
+}
+
+.footer-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.footer-section p:first-child {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+
+.submit-btn {
+    background: yellow;
+    margin-top: 50px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+
+.submit-btn:focus::after {
+    content: "Submitted!";
+    display: inline;
+}
+
+.submit-btn:focus {
+    color: white;
+    background-color: green;
+    outline: none;
+}
+
+/* Hide the original text after clicking */
+.submit-btn:focus span {
+    display: none;
+}
