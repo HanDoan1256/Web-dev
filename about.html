@@ -74,12 +74,65 @@
             gap: 110px;
             width: 90%;
             flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
         }
         .team-member img {
             width: 350px;
             height: 350px;
             border: 2px solid white;
+            transition: transform 0.3s ease;
         }
+    
+        
+        
+        .contribution-1 {
+            position: absolute;
+            bottom: 9px;
+            left: 70.5%;
+            width: 610px;
+            transform: translateX(-50%);
+            background-color: yellow;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+
+        }
+
+        .contribution-2 {
+            position: absolute;
+            bottom: 9px;
+            left: 29.5%;
+            width: 610px;
+            transform: translateX(-50%);
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+
+        }
+
+       
+        .team-member:hover .contribution-1, .team-member:hover .contribution-2 {
+            opacity: 1; 
+        }
+
         .team-info {
             border: 2px solid white;
             padding: 20px;
@@ -90,10 +143,12 @@
             align-items: flex-start;
             text-align: left;
             font-family: 'Inter', sans-serif;
+            font-size: 15px;
         }
         .team-info h3 {
-            margin-top: 20px;
+            margin-top: 10px;
             color: yellow;
+            font-size: 25px;
         }
         .team-info button {
             background: none;
@@ -184,6 +239,7 @@
     <section class="team-container">
         <div class="team-member">
             <img src="mem.png" alt="Nguyen Le Thuy Duong">
+            <div class="contribution-1">CONTRIBUTION: <br> Sketched the website layout to create a well-structured and user-friendly design. Carefully planned the arrangement of sections to ensure an intuitive and visually appealing framework. Developed the homepage, making it engaging and informative as the main entry point for visitors.</div>
             <div class="team-info">
                 <h3>Nguyen Le Thuy Duong</h3>
                 <p><strong>Student ID: 105080751</strong></p>
@@ -193,6 +249,7 @@
         </div>
 
         <div class="team-member">
+            <div class="contribution-2">CONTRIBUTION <br> Conducted research and gathered information for the "Jobs" page. Collected details about available positions, job descriptions, and company hiring policies. Organized the content clearly and effectively to provide job seekers with accessible and informative application details.</div>
             <div class="team-info">
                 <h3>Doan Gia Han</h3>
                 <p><strong>Student ID: 105506817</strong></p>
@@ -204,6 +261,7 @@
 
         <div class="team-member">
             <img src="mem.png" alt="Ngo Quynh Nhu">
+            <div class="contribution-1">CONTRIBUTION <br> Researched and structured the content for the "About" page. Focused on presenting the company’s mission, vision, and core values. Ensured that the information was engaging and provided visitors with a deeper understanding of the company's background and objectives.</div>
             <div class="team-info">
                 <h3>Ngo Quynh Nhu</h3>
                 <p><strong>Student ID: 105312140</strong></p>
@@ -213,6 +271,7 @@
         </div>
 
         <div class="team-member">
+            <div class="contribution-2">CONTRIBUTION <br> Designed and developed the "Application Form" page. Ensured that the form was well-structured, easy to navigate, and capable of capturing all necessary applicant information. Focused on user-friendliness and efficiency to streamline the application process for candidates.</div>
             <div class="team-info">
                 <h3>Vo Nguyen Minh</h3>
                 <p><strong>Student ID: 105505636</strong></p>
