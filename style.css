@@ -1,0 +1,189 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20:wght@400;700&display=swap');
+
+/*general setup*/
+body {
+    font-family: 'Jersey 20', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000612;
+    color: #fffcfc;
+}
+h1 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:120px; margin-bottom: 5px;}
+h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-bottom: 5px;}
+
+p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 30px; margin-top: 5px;}
+header {
+    color: white;
+    padding: 10px;
+    text-align: center;   
+    }
+nav {
+    border: 2px solid white;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+    
+}
+
+nav ul a{
+    color: #fffcfc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left:10px;
+}
+nav ul a:hover {
+    color: #e8d240;
+}
+nav ul a.active {
+    color: #e8d240;
+}
+
+.intro {
+    position: relative;
+    background-image: url("images/background.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 760px;
+    width: cover;
+    place-content: center;
+    min-block-size: 80vh;
+    text-align: left;
+    padding-left: 80px;
+}
+
+
+
+.companyintro {
+    position: relative;
+    height: 760px;
+    width: cover;
+    text-align: right;
+    padding-right: 80px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.companyintro img {
+    float: left;
+    margin-right: 20px; /* Adds space between image and text */
+    width: 500px;
+    height: 500px;
+    margin-left: 80px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+
+.companyintro .content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 650px;
+}
+
+.recruitment {
+    height: 760px;
+    position: relative;
+}
+
+.recruitment h2 {
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.img-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0 30px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    
+    gap: 100px; /* Ensures spacing if <a> elements are flex children */
+}
+
+.img-container a {
+    display: flex; /* Ensures that <a> takes flex properties */
+    margin-right: 80px; /* Ensures spacing if gap fails */
+}
+
+.img-container a:last-child {
+    margin-right: 0; /* Removes extra space after the last image */
+}
+
+.img-container img {
+    width:550px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+.introteam {
+    text-align: center;
+}
+
+.introteam h2 {margin-top: 1px;}
+.introteam a {font-size: 30px;}
+.pic-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+figure img {
+    width: 350px; 
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fffcfc;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-bottom: 200px;
+}
+.footer-links a {
+    padding: 20px 50px;
+    text-align: center;
+}
