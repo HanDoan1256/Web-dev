@@ -181,9 +181,47 @@ footer {
     text-align: center;
     padding: 20px;
     color: white;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
-.footer-links a {
-    padding: 20px 50px;
+footer h3 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Jersey 20', sans-serif;
+}
+footer p {
+    font-size: 20px;
+    color: gray;
+    margin: 5px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 5px;
+    font-family: Helvetica;
+}
+
+.footer-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.footer-section p:first-child {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
 }
