@@ -2,84 +2,153 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
-    <link rel="stylesheet" href="appstyles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
-            <div class="logo">LOGO</div>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">JOBS</a></li>
-                <li><a href="#" class="active">APPLY</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">ENHANCEMENTS</a></li>
-            </ul>
-        </nav>
-        <div class="apply-banner">
-            <h1><span>APPLY</span> NOW</h1>
-            <button>>>>>>>>>></button>
-        </div>
+        <div class="logo">LOGO</div>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">JOBS</a></li>
+          <li><a href="#" class="active">APPLY</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">ENHANCEMENTS</a></li>
+        </ul>
+      </nav>
+      <div class="apply-banner">
+        <h1><span>APPLY</span> NOW</h1>
+        <nav><a href="#apply"><button> <em><strong>Click Here!</strong></em> </button></a></nav
+      </div>
     </header>
     <main>
-      <section class="application-form">
-        <h2>APPLICATION FORM</h2>
-        <p>We’re excited to have you apply! Please complete the form below with your details so we can review your application and get back to you soon!</p>
+      <section class="application-form" id="apply">
+        <h1>APPLICATION FORM</h1>
+        <p id="apply">We’re excited to have you apply! Please complete the form below with your details so we can review your application and get back to you soon!</p>
         <form method="post" action="">
           <fieldset>
-            <label for="job-reference">Job Reference Number (mandatory information) <input id="job-reference" name="job-reference" type="text" required /></label>
-            <label for="First Name">First Name (mandatory information) <input id="First Name" name="First Name" type="text" required /></label>
-            <label for="Last Name">Last Name (mandatory information) <input id="Last Name" name="Last Name" type="text" required /></label>
-            <label for="Birthday">Day of Birth (mandatory information) <input id="Birthday" name="Birthday" type="date" required /></label>
-               <fieldset>
-         <legend>Gender (mandatory information)</legend>
-          <label class="inline"><input type="radio" name="gender" value="male" required> Male</label>
-                        <label><input type="radio" name="gender" value="female" required> Female</label>
-                 </fieldset>
-            <label for="address">Street Address (mandatory information) <input id="address" name="address" type="text" required /></label>
-            <label for="suburb">Suburb/Town (mandatory information) <input id="suburb" name="suburb" type="text" required /></label>
-            <label for="state">State (mandatory information) <input id="state" name="state" type="text" required /></label>
-            <label for="email">Email Address (mandatory information) <input id="email" name="email" type="email" required /></label>
-            <label for="phone">Phone Number (mandatory information) <input id="phone" name="phone" type="tel" required /></label>
-            <label for="skill">Skill list (mandatory information) <input id="skill" name="skill" type="text" required /></label>
-            <div class="skills">
-                    <input type="checkbox"> A
-                    <input type="checkbox"> B
-                    <input type="checkbox"> C
-                    <input type="checkbox" id="other-skills-checkbox" class="other-skills inline" />
-    <label for="other-skills-checkbox">Other skills <textarea id="other-skills-textarea" placeholder="Type your other skills here"></textarea></label>
+            <div>
+              <label for="job-reference">Job Reference Number (mandatory information)
+              <input id="job-reference" name="job-reference" type="text" required />
+            </label>
+            </div>
+            
+            <div class="row-container">
+              <div class="left">
+                <label for="first-name">First Name (mandatory information)
+                <input id="first-name" name="first-name" type="text" required />
+                </label>
+              </div>
+              <div class="right">
+                <label for="last-name">Last Name (mandatory information)
+                <input id="last-name" name="last-name" type="text" required />
+                </label>
+              </div>
             </div>
 
-                <button type="submit" class="submit-btn">SUBMIT</button>
+            <div>
+              <div class="left">
+                <label for="birthday">Day of Birth (mandatory information)
+                <input id="birthday" name="birthday" type="text" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="dd/mm/yyyy" required />
+                </label>
+              </div>
+              <h3 id="gencap">Gender (mandatory information)</h3>
+              <div class="right">
+                <div class="radio-left">
+                  <label>
+                  <input type="radio" name="gender" value="male" required>Male
+                  </label>
+                  </div>
+                <div class="radio-right">
+                  <label>
+                  <input type="radio" name="gender" value="female" required>Female
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <label for="address">Street Address (mandatory information)
+              <input id="address" name="address" type="text" required />
+            </label>
+            <label for="suburb">Suburb/Town (mandatory information)
+              <input id="suburb" name="suburb" type="text" required />
+            </label>
+
+            <div class="row-container">
+              <div class="left">
+                <label for="code">Postcode (mandatory information)
+                <input id="code" name="code" type="text" required />
+                </label>
+              </div>
+              <div class="right">
+                <label for="state">State (mandatory information)
+                <input id="state" name="state" type="text" required />
+                </label>
+              </div>
+
+            <div class="row-container">
+              <div class="left">
+                <label for="email">Email Address (mandatory information)
+                <input id="email" name="email" type="email" required />
+                </label>
+              </div>
+              <div class="right">
+                <label for="phone">Phone Number (mandatory information)
+                <input id="phone" name="phone" type="tel" required />
+                </label>
+              </div>
+            </div>
+            
+          <div class="skill-section">
+            <label for="skill">Skills list (mandatory information)
+            </label>
+            <div class="skills">
+              <label>
+              <input type="checkbox" name="skill-a"> A
+              </label>
+              <label>
+              <input type="checkbox" name="skill-b"> B
+              </label>
+              <label>
+              <input type="checkbox" name="skill-c"> C
+              </label>
+              <label>
+              <input type="checkbox" id="other-skills-checkbox" name="other-skills-checkbox" class="other-skills inline"> Other skills
+              </label>
+              <textarea id="other-skills-textarea" placeholder="Type your other skills here"></textarea>
+            </div>
+          </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
           </fieldset>
         </form>
       </section>
     </main>
     <hr>
     <footer>
-    <h3>Bluematrix</h3>
-    <p><em>the tide of innovation</em></p>
-
-    <div class="footer-container">
+      <h3>Bluematrix</h3>
+      <p><em>the tide of innovation</em></p>
+      <div class="footer-container">
         <div class="footer-section">
-            <p>Helpdesk</p>
-            <p><a href="#">Career Helpdesk</a></p>
-            <p><a href="#">Email</a></p>
+          <p>Helpdesk</p>
+          <p><a href="#">Career Helpdesk</a></p>
+          <p><a href="#">Email</a></p>
         </div>
         <div class="footer-section">
-            <p>About Us</p>
-            <p><a href="#">About Bluematrix</a></p>
-            <p><a href="#">Media Gallery</a></p>
-            <p><a href="#">Invest In Us</a></p>
+          <p>About Us</p>
+          <p><a href="#">About Bluematrix</a></p>
+          <p><a href="#">Media Gallery</a></p>
+          <p><a href="#">Invest In Us</a></p>
         </div>
         <div class="footer-section">
-            <p>Others</p>
-            <p><a href="#">Blog</a></p>
-            <p><a href="#">Our Activities</a></p>
+          <p>Others</p>
+          <p><a href="#">Blog</a></p>
+          <p><a href="#">Our Activities</a></p>
         </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
   </body>
 </html>
