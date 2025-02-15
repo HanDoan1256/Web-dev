@@ -13,19 +13,24 @@ body {
 h1 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:120px; margin-bottom: 5px;}
 h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-bottom: 5px;}
 
-p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 30px; margin-top: 5px;}
+p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
 header {
     color: white;
-    padding: 10px;
     text-align: center;   
     }
 nav {
-    border: 2px solid white;
-    padding: 10px;
-    width: 90%;
+    
     margin: auto;
     display: flex;
+    position: absolute; /* Places navbar over the intro */
+    top: 10px;
+    left: 70px;
+    right: 70px;
+    width: 90%; 
+    display: flex;
     justify-content: center;
+    z-index: 10; 
+    border: 2px solid white;
 }
 nav ul{
     align-items: center;
@@ -37,13 +42,10 @@ nav ul{
     width: 100%;
     
 }
-
 nav ul a{
     color: #fffcfc;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
-    margin-left:10px;
 }
 nav ul a:hover {
     color: #e8d240;
@@ -54,11 +56,11 @@ nav ul a.active {
 
 .intro {
     position: relative;
-    background-image: url("images/background.jpg"); 
+    background-image: url("images/bg.png"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    height: 760px;
+    height: 780px;
     width: cover;
     place-content: center;
     min-block-size: 80vh;
@@ -66,7 +68,11 @@ nav ul a.active {
     padding-left: 80px;
 }
 
-
+.intro h3 {
+    color: #fffcfc;
+    font-size: 50px;
+    margin-top: 5px;
+}
 
 .companyintro {
     position: relative;
@@ -82,7 +88,7 @@ nav ul a.active {
 .companyintro img {
     float: left;
     margin-right: 20px; /* Adds space between image and text */
-    width: 500px;
+    width: 600px;
     height: 500px;
     margin-left: 80px;
     border: 2px solid #fff;
@@ -94,14 +100,16 @@ nav ul a.active {
     flex-direction: column;
     overflow: hidden;
     height: 650px;
+    padding-left: 100px;
+    
 }
 
-.recruitment {
+.pjcts {
     height: 760px;
     position: relative;
 }
 
-.recruitment h2 {
+.pjcts h2 {
     margin-bottom: 80px;
     text-align: center;
     margin-top: 5px;
@@ -111,7 +119,7 @@ nav ul a.active {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 50px 0;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     
@@ -132,6 +140,7 @@ nav ul a.active {
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
+    border: 2px solid #fff;
 }
 
 .img-container img:hover {
@@ -143,7 +152,7 @@ nav ul a.active {
 }
 
 .introteam h2 {margin-top: 1px;}
-.introteam a {font-size: 30px;}
+.introteam a {font-size: 20px;}
 .pic-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -162,13 +171,14 @@ figure {
 
 figure img {
     width: 350px; 
-    height: auto;
+    height: 400px;
     object-fit: cover;
+    border: 2px solid #fff;
 }
 
 figcaption {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: #fffcfc;
     text-align: center;
@@ -190,7 +200,7 @@ footer h3 {
 }
 footer p {
     font-size: 20px;
-    color: gray;
+    color: #fffcfc;
     margin: 5px 0;
 }
 
