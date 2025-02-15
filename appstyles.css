@@ -40,6 +40,19 @@ nav ul li a {
 
 nav ul li .active {
     color: yellow;
+    font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.2em 0.6em;
+  display: inline-block;
+  font-weight: normal;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: yellow;
 }
 
 /* Banner */
@@ -50,26 +63,48 @@ nav ul li .active {
 
 .apply-banner h1 span {
     color: yellow;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.apply-banner h1 {
+    font-size: 40px;
+    font-style: italic;
 }
 
 .apply-banner button {
     background: black;
     color: white;
-    border: none;
-    border-radius: 5px;
-    width: 100px;
+    border-color: white;
+    border: 4px solid white;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
 }
 
 /*Application Form*/
 
 .application-form {
     background: #111;
-    padding: 30px;
+    padding: 20px;
     margin: 20px auto;
+    max-width: 800px;
 }
 
-h2 {
+.application-form h1 {
     text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+
+section p {
+    text-align: center;
+}
+
+#apply p {
+    font-size: 20px;
+    font-style: italic;
 }
 
 form {
@@ -77,14 +112,45 @@ form {
     flex-direction: column;
     gap: 30px;
     border: none;
+    padding: 20px;
+    font-size: 17px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; 
+}
+
+input {
+  margin-top: 10px;
+}
+
+.left {
+    width: 40%;
+    float: left;
+}
+
+.right {
+    width: 40%;
+    float: right;
+}
+
+.left label {
+    width: 100%
+}
+
+.right label  {
+    width: 100%;
 }
 
 input, select, textarea {
     width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
+    padding: 23px;
     font-size: 16px;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border: 4px solid white;
 }
 
 textarea {
@@ -103,23 +169,46 @@ fieldset {
     gap: 20px;
 }
 
+.gender-align legend {
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 100%
+}
+
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.gender-options {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.right {
+  display: flex;
+  gap: 20px; 
 }
 
-.gender-options label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.radio-left {
+    float: left;
+    border: 4px solid white;
+    padding: 6px;
+    width: 210px;
 }
+
+.radio-right {
+    float: right;
+    border: 4px solid white;
+    padding: 6px;
+    width: 210px;
+}
+
+#gencap {
+    text-align: right;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-right: 12px;
+    font-size: 19px;
+}
+
 
 /* Skill List */
 .skills {
@@ -138,6 +227,16 @@ label {
 .skills input[type="checkbox"] {
     width: auto;
     margin: 0;
+}
+
+.skill-section {
+    display: inline-block;
+}
+
+.skills textarea {
+    width: 600px;
+    height: 100px;
+    margin-bottom: 50px;
 }
 
 /*Footer*/
@@ -196,6 +295,7 @@ footer p {
 
 .submit-btn {
     background: yellow;
+    margin-bottom: 50px;
     margin-top: 50px;
     padding: 15px;
     border: none;
@@ -217,7 +317,6 @@ footer p {
     outline: none;
 }
 
-/* Hide the original text after clicking */
 .submit-btn:focus span {
     display: none;
 }
