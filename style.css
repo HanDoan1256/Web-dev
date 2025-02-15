@@ -13,9 +13,12 @@ body {
 h1 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:120px; margin-bottom: 5px;}
 h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-bottom: 5px;}
 /*Han*/
+.job-container { display: flex; align-items: center; margin-bottom: 20px; }
+.job-container img { width: 500px; height: auto; margin-right: 20px; }
 .job-details { flex: 1; }
 details {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 30px; margin-top: 5px }
 summary { cursor: pointer; font-weight: bold; font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 30px; margin-top: 5px }
+
 /*Han*/
 p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
 header {
