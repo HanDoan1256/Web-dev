@@ -3,42 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylejd.css">
     <title>Job Positions</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; color:#FFFCFC; background-color: #000612}
-        header, footer { background-color:  #1a48ba; padding: 10px; text-align: center; color:#FFFCFC}
-        nav { background-color:  #000612; padding: 10px; text-align: center; border: 2x #FFFCFC }
-        nav a {margin: 0 25px; text-decoration: none; color: black; font-weight: bold; display: inline-block; color:#FFFCFC; border: 2x #FFFCFC }
-        section { margin-bottom: 20px; }
-        aside { background-color:  #000612; padding: 10px; margin-top: 20px; color:#FFFCFC }
-        .job-images { display: flex; justify-content: space-between; margin: 20px 0; color:#FFFCFC}
-        .job-images img { width: 80%; height: 400px; }
-        .job-container { display: flex; align-items: center; margin-bottom: 20px; }
-        .job-container img { width: 500px; height: auto; margin-right: 20px; }
-        .job-details { flex: 1; }
-        details { margin-top: 10px; }
-        summary { cursor: pointer; font-weight: bold; }
-
-    </style>
+    
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="#" style ="color:#E8D240 ">Job</a>
-        <a href="#">Apply</a>
-        <a href="#">About</a>
-        <a href="#">Enhancement</a>
+        <ul>
+            <li><a href="logo.html">LOGO</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="jobs.html" class="active">JOBS</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            <li><a href="about.html" >ABOUT</a></li>
+            <li><a href="services.html">ENHANCEMENT</a></li>
+        </ul>
     </nav>
     
     
     <header>
-        <h1>WE ARE <span style="color: #E8D240;">HIRING</span></h1>
+        <h1>WE ARE HIRING</span></h1>
         <h2>Join our team and be part of our innovative journey.</h2>
     </header>
     
     <section>
         <h2>Positions We Are Looking For</h2>
-        <div class="job-images">
+        <div class="img-container">
             <a href ="#SD" ><img src="SD.jpg" alt="Software Developer"></a>
             <a href ="#STA" ><img src="STA.jpg" alt="Data Analyst"></a>
             <a href ="#BE" ><img src="BE.jpg" alt="Senior Backend Engineer"></a>
@@ -190,17 +179,31 @@
     <br>
     <br>
     <br>
-    <h1 style="text-align: center;"> <a href = "#" style="background-color: #E8D240; padding: 10px; color: #000612; display: inline-block" > APPLY NOW </a> </h1>
     <br>
     <br>
     <br>
     <footer>
-        <p>&copy; 2025 Bluematrix. The tide of innovation.</p>
-        <p> Career helpdesk</p>
-        <p>Email: </p>
-        <p>About BlueMatrix</p>
-        <p>Media Gallery</p>
-        <p>Invest in us</p>
-    </footer>
+        <h3>Bluematrix</h3>
+        <p><em>THE TIDE OF INNOVATION</em></p>
+    
+        <div class="footer-container">
+            <div class="footer-section">
+                <p>Helpdesk</p>
+                <p><a href="#">Career Helpdesk</a></p>
+                <p><a href="#">Email</a></p>
+            </div>
+            <div class="footer-section">
+                <p>About Us</p>
+                <p><a href="#">About Bluematrix</a></p>
+                <p><a href="#">Media Gallery</a></p>
+                <p><a href="#">Invest In Us</a></p>
+            </div>
+            <div class="footer-section">
+                <p>Others</p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Our Activities</a></p>
+            </div>
+        </div>
+      </footer>
 </body>
 </html>
