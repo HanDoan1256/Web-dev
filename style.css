@@ -13,12 +13,12 @@ body {
 h1 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:120px; margin-bottom: 5px;}
 h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-bottom: 5px;}
 /*Han*/
-h3 {font-family: 'Jersey 20', sans-serif;color: #fffcfc font-size:60px; margin-bottom: 5px;}
+h3 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:60px; margin-bottom: 5px;}
 .job-images { display: flex; justify-content: space-between; margin: 20px 0; color:#FFFCFC; 
              overflow-x: auto;
             white-space: nowrap;
             padding: 10px 0 50px 0;}
-.job-images img { width: 30%; height: auto; }
+.job-images img { width: 100%; height: auto; }
 .job-container { display: flex; align-items: center; margin-bottom: 20px; }
 .job-container img { width: 500px; height: auto; margin-right: 20px; }
 .job-details { flex: 1; }
