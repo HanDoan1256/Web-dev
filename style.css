@@ -24,13 +24,13 @@ h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-
 
 @keyframes words {
     0%, 33% {
-        content: "Software Developer";
+        content: " Software Developer";
     }
     34%, 66% {
-        content: "Data Analyst";
+        content: " Data Analyst";
     }
     67%, 100% {
-        content: "Senior Backend Engineer";
+        content: " Senior Backend Engineer";
     }
 }
 
