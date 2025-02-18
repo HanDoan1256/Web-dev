@@ -31,7 +31,7 @@ details {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; marg
 summary { cursor: pointer; font-weight: bold; font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 25px; margin-top: 5px }
 .aside-container {
     display: flex; /* Side-by-side layout */
-    align-items: stretch; /* Ensure both elements have equal height */
+    align-items: center; /* Ensure both elements have equal height */
     gap: 5px; /* Space between aside and video */
 }
 aside {
