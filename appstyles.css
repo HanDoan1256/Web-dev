@@ -24,6 +24,7 @@ nav {
     z-index: 10; 
     border: 2px solid white;
 }
+
 nav ul{
     align-items: center;
     list-style: none;
@@ -32,16 +33,18 @@ nav ul{
     justify-content: center;
     gap: 70px;
     width: 100%;
-    
 }
+
 nav ul a{
     color: #fffcfc;
     text-decoration: none;
     font-weight: bold;
 }
+
 nav ul a:hover {
     color: #e8d240;
 }
+
 nav ul a.active {
     color: #e8d240;
 }
