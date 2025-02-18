@@ -31,19 +31,19 @@
           <fieldset>
             <div>
               <label for="job-reference">Job Reference Number
-              <input id="job-reference" name="job-reference" type="text" required />
+              <input id="job-reference" name="job-reference" type="text" pattern="^[a-zA-Z0-9]{5}$" required />
             </label>
             </div>
             
             <div class="row-container">
               <div class="left">
                 <label for="first-name">First Name
-                <input id="first-name" name="first-name" type="text" required />
+                <input id="first-name" name="first-name" type="text" pattern="^[a-zA-Z]{1,20}$" required />
                 </label>
               </div>
               <div class="right">
                 <label for="last-name">Last Name
-                <input id="last-name" name="last-name" type="text" required />
+                <input id="last-name" name="last-name" type="text" pattern="^[a-zA-Z]{1,20}$" required />
                 </label>
               </div>
             </div>
@@ -70,16 +70,16 @@
             </div>
 
             <label for="address">Street Address
-              <input id="address" name="address" type="text" required />
+              <input id="address" name="address" type="text" pattern=".{1,40}" required />
             </label>
             <label for="suburb">Suburb/Town
-              <input id="suburb" name="suburb" type="text" required />
+              <input id="suburb" name="suburb" type="text" pattern=".{1,40}" required />
             </label>
 
             <div class="row-container">
               <div class="left">
                 <label for="code">Postcode
-                <input id="code" name="code" type="text" required />
+                <input id="code" name="code" type="text" pattern="^\d{4}$" required />
                 </label>
               </div>
               <div class="state-select">
@@ -99,12 +99,12 @@
             <div class="row-container">
               <div class="left">
                 <label for="email">Email Address
-                <input id="email" name="email" type="email" required />
+                <input id="email" name="email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
                 </label>
               </div>
               <div class="right">
                 <label for="phone">Phone Number
-                <input id="phone" name="phone" type="tel" required />
+                <input id="phone" name="phone" type="tel" pattern="^[0-9\s]{8,12}$" required />
                 </label>
               </div>
             </div>
