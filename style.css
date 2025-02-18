@@ -29,7 +29,16 @@ h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-
 .job-details { flex: 1; }
 details {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px }
 summary { cursor: pointer; font-weight: bold; font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 25px; margin-top: 5px }
-
+aside {
+    border: 2px solid white; /* White border */
+    padding: 20px; /* Spacing inside the box */
+    margin: 20px 0; /* Space from other elements */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: white; /* Text color */
+    max-width: 400px; /* Set max width */
+}
 /*Han*/
 p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
 header {
