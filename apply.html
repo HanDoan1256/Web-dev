@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
-    <link rel="stylesheet" href="appstyles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -19,8 +19,8 @@
             </ul>
       </nav>
       <div class="apply-banner">
-        <h1><span>APPLY</span> NOW</h1>
-        <a href="#apply"><button> > Click Here! < </button></a>
+        <h1><span>APPLY</span> NOW!</h1>
+        <a href="#apply"><button> Get Started </button></a>
       </div>
     </header>
     <main>
@@ -30,19 +30,19 @@
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
           <fieldset>
             <div>
-              <label for="job-reference">Job Reference Number (mandatory information)
+              <label for="job-reference">Job Reference Number
               <input id="job-reference" name="job-reference" type="text" required />
             </label>
             </div>
             
             <div class="row-container">
               <div class="left">
-                <label for="first-name">First Name (mandatory information)
+                <label for="first-name">First Name
                 <input id="first-name" name="first-name" type="text" required />
                 </label>
               </div>
               <div class="right">
-                <label for="last-name">Last Name (mandatory information)
+                <label for="last-name">Last Name
                 <input id="last-name" name="last-name" type="text" required />
                 </label>
               </div>
@@ -50,11 +50,11 @@
 
             <div>
               <div class="left">
-                <label for="birthday">Day of Birth (mandatory information)
+                <label for="birthday">Day of Birth 
                 <input id="birthday" name="birthday" type="text" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="dd/mm/yyyy" required />
                 </label>
               </div>
-              <h3 id="gencap">Gender (mandatory information)</h3>
+              <h3 id="gencap">Gender</h3>
               <div class="right">
                 <div class="radio-left">
                   <label>
@@ -70,40 +70,48 @@
             </div>
 
 
-            <label for="address">Street Address (mandatory information)
+            <label for="address">Street Address
               <input id="address" name="address" type="text" required />
             </label>
-            <label for="suburb">Suburb/Town (mandatory information)
+            <label for="suburb">Suburb/Town
               <input id="suburb" name="suburb" type="text" required />
             </label>
 
             <div class="row-container">
               <div class="left">
-                <label for="code">Postcode (mandatory information)
+                <label for="code">Postcode
                 <input id="code" name="code" type="text" required />
                 </label>
               </div>
-              <div class="right">
-                <label for="state">State (mandatory information)
-                <input id="state" name="state" type="text" required />
-                </label>
+              <div class="state-select">
+                <label for="state" id="state-text">State</label>
+                <select id="state" name="state" required />
+                <option value="VIC">Victoria (VIC)</option>
+                <option value="NSW">New South Wales (NSW)</option>
+                <option value="QLD">Queensland (QLD)</option>
+                <option value="NT">Northern Territory (NT)</option>
+                <option value="WA">Western Australia (WA)</option>
+              <option value="SA">South Australia (SA)</option>
+              <option value="TAS">Tasmania (TAS)</option>
+              <option value="ACT">Australian Capital Territory (ACT)</option>
+                </select>
               </div>
 
             <div class="row-container">
               <div class="left">
-                <label for="email">Email Address (mandatory information)
+                <label for="email">Email Address
                 <input id="email" name="email" type="email" required />
                 </label>
               </div>
               <div class="right">
-                <label for="phone">Phone Number (mandatory information)
+                <label for="phone">Phone Number
                 <input id="phone" name="phone" type="tel" required />
                 </label>
               </div>
             </div>
             
           <div class="skill-section">
-            <label for="skill">Skills list (mandatory information)
+            <label for="skill">Skills list
             </label>
             <div class="skills">
               <label>
@@ -118,7 +126,7 @@
               <label>
               <input type="checkbox" id="other-skills-checkbox" name="other-skills-checkbox" class="other-skills inline"> Other skills
               </label>
-              <textarea id="other-skills-textarea" placeholder="Type your other skills here"></textarea>
+              <textarea id="other-skills-textarea" placeholder="Type your other skills here..."></textarea>
             </div>
           </div>
 
