@@ -10,11 +10,6 @@ body {
 
 /* Navigation Bar */
 
-p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
-header {
-    color: white;
-    text-align: center;   
-    }
 nav {
     
     margin: auto;
