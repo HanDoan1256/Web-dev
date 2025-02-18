@@ -9,50 +9,46 @@ body {
 }
 
 /* Navigation Bar */
+
+p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
 header {
-    background: #2c40c6;
-    padding: 10px 20px;
-    text-align: center;
-}
-
+    color: white;
+    text-align: center;   
+    }
 nav {
+    
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute; /* Places navbar over the intro */
+    top: 10px;
+    left: 70px;
+    right: 70px;
+    width: 90%; 
+    display: flex;
+    justify-content: center;
+    z-index: 10; 
+    border: 2px solid white;
 }
-
-nav ul {
+nav ul{
+    align-items: center;
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+    
 }
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
+nav ul a{
+    color: #fffcfc;
     text-decoration: none;
     font-weight: bold;
 }
-
-nav ul li .active {
-    color: yellow;
-    font-weight: bold;
+nav ul a:hover {
+    color: #e8d240;
 }
-
-nav a {
-  text-decoration: none;
-  padding: 0.2em 0.6em;
-  display: inline-block;
-  font-weight: normal;
-}
-
-nav a:hover {
-  font-weight: bold;
-  color: yellow;
+nav ul a.active {
+    color: #e8d240;
 }
 
 /* Banner */
