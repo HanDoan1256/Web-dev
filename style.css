@@ -15,6 +15,7 @@ h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-
 /*Han*/
 h3 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:60px; margin-bottom: 5px;}
 h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
+typewriter {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
 .typewriter-text::before {
     content: "Software Developer";
     font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px;
