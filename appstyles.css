@@ -240,22 +240,24 @@ label {
 }
 
 /*Footer*/
+
 footer {
+    clear: both;
+    position: relative;
+    width: 100%;
     text-align: center;
-    background: black;
-    color: white;
     padding: 20px;
+    color: white;
+    margin-bottom: 50px;
 }
-
 footer h3 {
-    font-size: 24px;
-    margin-top: 2px;
-    margin-bottom: 3px;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Jersey 20', sans-serif;
 }
-
 footer p {
-    font-size: 24px;
-    color: gray;
+    font-size: 20px;
+    color: #fffcfc;
     margin: 5px 0;
 }
 
@@ -263,7 +265,7 @@ footer p {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 15px;
+    margin-top: 5px;
     font-family: Helvetica;
 }
 
