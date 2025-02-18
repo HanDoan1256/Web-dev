@@ -15,6 +15,24 @@ h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-
 /*Han*/
 h3 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:60px; margin-bottom: 5px;}
 h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
+.typewriter-text::before {
+    content: "Software Developer";
+    font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px;
+    animation: words 6s steps(20) infinite;
+}
+
+@keyframes words {
+    0%, 33% {
+        content: "Software Developer";
+    }
+    34%, 66% {
+        content: "Data Analyst";
+    }
+    67%, 100% {
+        content: "Senior Backend Engineer";
+    }
+}
+
 section a {
             color:#FFFCFC;
             text-decoration: none;
