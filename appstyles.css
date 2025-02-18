@@ -83,6 +83,7 @@ nav ul a.active {
     width: 150px;
 }
 
+
 /*Application Form*/
 
 .application-form {
@@ -206,11 +207,11 @@ label {
 .state-select {
     float: right;
     width: 300px;
-    height: 111px;
+    height: 114px;
 }
 
 select {
-    width: 350px;
+    width: 355px;
 }
 
 /* Skill List */
@@ -240,6 +241,11 @@ select {
     width: 600px;
     height: 100px;
     margin-bottom: 50px;
+}
+
+.skill-section p {
+    margin-bottom: 40px;
+    margin-top: -15px;
 }
 
 /*Footer*/
