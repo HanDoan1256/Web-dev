@@ -129,7 +129,7 @@
         }
         dd {
             width: 65%; 
-            color: #666;
+            color: #000612;
             line-height: 1.6;
             margin-left: 0;
             text-align: left;
@@ -138,13 +138,13 @@
             color: #000612;
             text-decoration: none;
         }
-        .defi img{
+        .defi figure img{
             width: 150px;
             height: 150px; 
             object-fit: cover; 
             border: 2px solid #FFFCFC;
             transition: transform 0.3s ease;
-            margin-top: 15px;
+            margin-top: 3%;
             margin-right: 350px;
         }
         .team-member {
@@ -186,10 +186,65 @@
             color: #E8D240;
             font-size: 2.4vw;
         }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 0 auto; 
+        }
+        th, td {
+            padding: 10px;
+            margin: 0;
+            border: 1px solid #FFFCFC;
+            text-align: center;
+            vertical-align: top;
+            width: 14.28%; 
+        }
+        th {
+            background-color: #000612;
+            font-weight: bold;
+        }
+        td {
+            height: 90px; 
+            position: relative;
+            padding: 5px; 
+        }
+        .TNE, .VOV, .STA, .COS {
+            background-color: #1b1c55;
+            color: #FFFCFC;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.4vw;
+            margin-TOP: 3px; 
+        }
+        .empty-cell {
+            background-color: #000612;
+        }
+        .TNE:hover::after, .COS:hover::after, .STA:hover::after, .VOV:hover::after {
+            content: "Class: TNE"; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 3px;
+            z-index: 10;
+        }
+        .STA:hover::after {
+            content: "Class: STA";
+        }
+        .VOV:hover::after {
+            content: "Class: VOV";
+        }
+        .COS:hover::after {
+            content: "Class: COS";
+        }
         .about {
             width: 90%;
             max-width: 1200px;
             margin: auto;
+            background-color: #1b1c55;
         }
         .about .row{
             display: flex;
@@ -221,6 +276,11 @@
         .about .row .content h1{
             font-size: 30px;
         }
+    .text-container h3 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #FFFCFC;
+    }
         footer {
             clear: both;
             position: relative;
@@ -320,7 +380,7 @@
             <dd><a href="mailto:bluematrix2025@gmail.com">bluematrix2025@gmail.com</a></dd>
 
             <dt>Tutor's name</dt>
-            <dd>Tristan Nguyen</dd>
+            <dd><a href="mailto:trungnguyen@swin.edu.vn">Tristan Nguyen</a></dd>
 
             <dt>Nguyen Le Thuy Duong</dt>
             <dd>Sketched the website layout to create a well-structured and user-friendly design. Carefully planned the arrangement of sections to ensure an intuitive and visually appealing framework. Developed the homepage, making it engaging and informative as the main entry point for visitors.</dd>
@@ -336,10 +396,12 @@
         </dl>
         </div>
         <div class="defi">
-        <a href="#TD"><img src="THUYDUONG.JPG" alt="Nguyen Le Thuy Duong"></a>
-        <a href="#GH"><img src="Han.jpg" alt="Doan Gia Han"></a>
-        <a href="#QN"><img src="qnhu.png" alt="Ngo Quynh Nhu"></a>
-        <a href="#NM"><img src="NGUYENMINH.jpg" alt="Vo Nguyen Minh"></a>
+            <figure>
+                <a href="#TD"><img src="THUYDUONG.JPG" alt="Nguyen Le Thuy Duong"></a>
+                <a href="#GH"><img src="Han.jpg" alt="Doan Gia Han"></a>
+                <a href="#QN"><img src="qnhu.png" alt="Ngo Quynh Nhu"></a>
+                <a href="#NM"><img src="NGUYENMINH.jpg" alt="Vo Nguyen Minh"></a>
+            </figure>
         </div>
     </section>
 
@@ -389,7 +451,85 @@
     <section class="timetable">
         <h2>Timetable</h2>
         <div>
-            
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell">
+                        <div class="TNE">07:00 - 11:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="VOV">10:00 - 13:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="STA">07:00 - 10:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="COS">07:00 - 11:00</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell">
+                        <div class="TNE">07:00 - 11:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="VOV">10:00 - 13:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="STA">07:00 - 10:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="COS">07:00 - 11:00</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell">
+                        <div class="TNE">07:00 - 11:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="VOV">10:00 - 13:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="STA">07:00 - 10:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="COS">07:00 - 11:00</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell">
+                        <div class="TNE">07:00 - 11:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="VOV">10:00 - 13:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="STA">07:00 - 10:00</div>
+                    </td>
+                    <td class="empty">
+                        <div class="COS">07:00 - 11:00</div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
     
