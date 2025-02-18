@@ -32,7 +32,7 @@ summary { cursor: pointer; font-weight: bold; font-family: 'Inter', sans-serif; 
 .aside-container {
     display: flex; /* Side-by-side layout */
     align-items: stretch; /* Ensure both elements have equal height */
-    gap: 20px; /* Space between aside and video */
+    gap: 5px; /* Space between aside and video */
 }
 aside {
     border: 2px #fffcfc ; 
@@ -46,7 +46,7 @@ video {
     flex: 1; /* Make video flexible */
     object-fit: cover; /* Ensure the video fills its box without distortion */
     height: 100%; /* Match the height of the aside box */
-    border-radius: 10px;
+    width: auto;
 }
 /*Han*/
 p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
