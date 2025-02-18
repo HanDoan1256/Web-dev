@@ -308,7 +308,8 @@ footer p {
 
 .submit-btn:focus::after {
     content: "Submitted!";
-    display: inline;
+    display: block;
+    
 }
 
 .submit-btn:focus {
