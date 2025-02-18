@@ -304,12 +304,19 @@ footer p {
     font-weight: bold;
     display: block;
     margin: auto;
+    text-align: center;
 }
 
-.submit-btn:focus::after {
-    content: "Submitted!";
+.submitted-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.submit-btn:focus + .submitted-message {
     display: block;
-    
+    content: "Submitted!";
 }
 
 .submit-btn:focus {
