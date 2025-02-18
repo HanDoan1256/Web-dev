@@ -37,8 +37,8 @@ nav ul {
     justify-content: center;
     gap: 70px;
     width: 100%;
-    
 }
+
 nav ul a {
     color: #fffcfc;
     text-decoration: none;
@@ -54,6 +54,7 @@ nav ul a.active {
 }
 
 /* Banner */
+
 .apply-banner {
     text-align: left;
     margin: 20px 0;
