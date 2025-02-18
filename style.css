@@ -15,6 +15,10 @@ h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-
 /*Han*/
 h3 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:60px; margin-bottom: 5px;}
 h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
+section a {
+            color:#FFFCFC;
+            text-decoration: none;
+        }
 .job-images { display: flex; justify-content: space-between; margin: 20px 0; color:#FFFCFC; 
              overflow-x: auto;
             white-space: nowrap;
