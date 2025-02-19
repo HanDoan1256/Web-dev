@@ -35,6 +35,8 @@ header {
 }
 
 
+/*Application Form*/
+
 .application-form {
     background: #111;
     padding: 10px;
@@ -64,103 +66,66 @@ form {
     gap: 30px;
     border: none;
     padding: 20px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px; 
+.row-container input { 
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border: 4px solid white;
+  font-size: 15px;
+  gap: 10px;
 }
 
-input {
-  margin-top: 10px;
+.row-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.left {
-    width: 40%;
-    float: left;
+.row-container div {
+    flex: 1; /* This makes both fields take equal space */
+    margin-right: 20px; /* Optional, adjust spacing if needed */
 }
 
-.right {
-    width: 40%;
-    float: right;
-}
-
-.left label {
-    width: 100%
-}
-
-.right label  {
-    width: 100%;
+.row-container input {
+    width: 100%; /* Make input take up full width inside div */
 }
 
 input, select, textarea {
-    width: 100%;
+    width: 90%;
     padding: 23px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     background-color: black;
     border-color: white;
     border: 4px solid white;
 }
 
+fieldset input { /*Help fieldset elements seperated*/
+    width: 5%;
+}
+
+fieldset {
+    border: 4px solid white;
+    width: 91%;
+    padding: 20px;
+}
+
 textarea {
     height: 80px;
 }
 
-.inline {
-    display: inline-block;
-}
-
-fieldset {
-    border: none; 
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.right {
-  display: flex;
-  gap: 20px; 
-}
-
-.radio-left {
-    float: left;
-    border: 4px solid white;
-    padding: 6px;
-    width: 210px;
-}
-
-.radio-right {
-    float: right;
-    border: 4px solid white;
-    padding: 6px;
-    width: 210px;
-}
-
-#gencap {
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    margin-right: 80px;
-    font-size: 19px;
-}
-
 .state-select {
     float: right;
-    width: 300px;
-    height: 114px;
 }
 
-select {
+select { /*Adjust the size of dropdown list "State" */
     width: 355px;
+    height: 66px;
 }
 
 /* Tooltip container */
@@ -173,6 +138,7 @@ select {
     font-weight: bold;
 }
 
+/* Tooltip text (hidden by default) */
 .tooltip .tooltip-text {
     visibility: hidden;
     width: 200px;
@@ -191,6 +157,7 @@ select {
     font-size: 12px;
 }
 
+/* Tooltip arrow */
 .tooltip .tooltip-text::after {
     content: "";
     position: absolute;
@@ -202,6 +169,7 @@ select {
     border-color: #333 transparent transparent transparent;
 }
 
+/* Show the tooltip text when hovering */
 .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
@@ -236,44 +204,7 @@ select {
     margin-bottom: 50px;
 }
 
-/* Submit Button */
-
-.submit-btn {
-    background: yellow;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 370px;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-family: 'Jersey 20'
-}
-
-.submitted-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Jersey 20'
-}
-
-.submit-btn:focus + .submitted-message {
-    display: block;
-    content: "Submitted!";
-}
-
-.submit-btn:focus {
-    color: white;
-    background-color: green;
-    outline: none;
-    visibility: hidden;
-}
-
-.submit-btn:focus span {
-    display: none;
+.skill-section p {
+    margin-bottom: 40px;
+    margin-top: -15px;
 }
