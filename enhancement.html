@@ -33,7 +33,7 @@
                     <th>Number</th>
                     <th>Name of enhancements</th>
                     <th>Explanation</th>
-                    <th>Html code</th>
+                    <th>HTML code</th>
                     <th>CSS code</th>
                 </tr>
                 /*Han/
@@ -62,13 +62,22 @@
                     <td>4 - Gia Han</td>
                     <td>Introduction video</td>
                     <td>According to the requirement, the aside section must take 25% on the right, seeing that this will make the page unsymmetrical and not atractive, a short video has been added to the left margin to fix this issue. This video automatically runs and loops back endlessly, make the page not only more appealing but also again mark up the company name for stronger impression. </td>
-                    <td>Row 4, Col 4</td>
-                    <td>Row 4, Col 5</td>
+                    <td>&lt;div class="MDA"&gt;13:00 - 16:00&lt;/div&gt;
+                        <br> Each class is represented by a &lt;/div&gt; inside a &lt;/td&gt;. As each class has a unique name to apply specific hover effect and information for each class.</td>
+                    <td>.TNE-1:hover::after {
+                            content: "Class: TNE - Han, Nhu, Minh"; }
+                        <br> When a user hovers over a class, the ::after pseudo-element dynamically adds the content and the content: defines the text that appears. Others elements were added to visualize the hover tooltip.
+                        <br>
+                        <br>.TNE-2:hover::after {
+                            content: "Class: TNE - Duong";
+                        }
+                        <br> Each class has a different hover message - ensures that each class uniquely displays the relevant enrolled students.</td>
                 </tr>
+                /*Nhu/
                 <tr>
-                    <td>Row 5, Col 1</td>
-                    <td>Row 5, Col 2</td>
-                    <td>Row 5, Col 3</td>
+                    <td>5 - Quynh Nhu/td>
+                    <td>Hover Effect</td>
+                    <td>This enhancement adds an interactive hover effect to the timetable classes. When users move their mouse on class entry, it will display a tooltip which show the class's name and the students enrolled in that class.</td>
                     <td>Row 5, Col 4</td>
                     <td>Row 5, Col 5</td>
                 </tr>
@@ -98,3 +107,4 @@
     </section>
 </body>
 </html>
+
