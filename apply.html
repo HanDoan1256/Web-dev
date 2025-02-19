@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
-    <link rel="stylesheet" href="apply.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
             <ul>
                 <li><a href="index.html">BLUEMATRIX</a></li>
-                <li><a href="index.html" class ="active">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="jobs.html">JOBS</a></li>
-                <li><a href="apply.html">APPLY</a></li>
+                <li><a href="apply.html" class ="active">APPLY</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="enhancements.html">ENHANCEMENTS</a></li>
             </ul>
@@ -29,59 +29,55 @@
         <h1>APPLICATION FORM</h1>
         <p id="apply">We’re excited to have you apply! Please complete the form below with your details so we can review your application and get back to you soon!</p>
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-          <fieldset>
-            <div>
+
+            <div class="container">
               <label for="job-reference">Job Reference Number
               <div class="tooltip">?
                   <span class="tooltip-text">[Software Developer: SD001] - [Data Analyst: DA001] - [Senior Backend Engineer: SBE01] </span>
               </div>
               <input id="job-reference" name="job-reference" type="text" pattern="^[a-zA-Z0-9]{5}$" placeholder="SD001 // DA001 // SBE01"  required />
-            </label>
+              </label>
             </div>
             
             <div class="row-container">
-              <div class="left">
+              <div>
                 <label for="first-name">First Name
                 <input id="first-name" name="first-name" type="text" pattern="^[a-zA-Z\s]{1,20}$" required />
                 </label>
               </div>
-              <div class="right">
+              <div>
                 <label for="last-name">Last Name
                 <input id="last-name" name="last-name" type="text" pattern="^[a-zA-Z\s]{1,20}$" required />
                 </label>
               </div>
             </div>
 
-            <div>
-              <div class="left">
-                <label for="birthday">Day of Birth 
-                <input id="birthday" name="birthday" type="text" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="dd/mm/yyyy" required />
+            <label for="birthday">Day of Birth 
+            <input id="birthday" name="birthday" type="text" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="dd/mm/yyyy" required />
+            </label>
+
+            <fieldset>
+              <legend>Gender</legend>
+              <input type="radio" id="gender" name="gender" value="male" required>Male
+              <input type="radio" name="gender" id="gender" value="female" required>Female
+              <input type="radio" id="gender" name="gender" value="male" required>Prefer not to say
+            </fieldset>
+
+            <div class="row-container">
+              <div>
+                <label for="street">Street Address
+                <input id="street" name="street" type="text" pattern="^[a-zA-Z\s]{1,20}$" required />
                 </label>
               </div>
-              <h3 id="gencap">Gender</h3>
-              <div class="right">
-                <div class="radio-left">
-                  <label>
-                  <input type="radio" name="gender" value="male" required>Male
-                  </label>
-                  </div>
-                <div class="radio-right">
-                  <label>
-                  <input type="radio" name="gender" value="female" required>Female
-                  </label>
-                </div>
+              <div>
+                <label for="suburb">Suburb/Town
+                <input id="suburb" name="suburb" type="text" pattern="^[a-zA-Z\s]{1,20}$" required />
+                </label>
               </div>
             </div>
 
-            <label for="address">Street Address
-              <input id="address" name="address" type="text" pattern=".{1,40}" required />
-            </label>
-            <label for="suburb">Suburb/Town
-              <input id="suburb" name="suburb" type="text" pattern=".{1,40}" required />
-            </label>
-
             <div class="row-container">
-              <div class="left">
+              <div>
                 <label for="code">Postcode
                 <input id="code" name="code" type="text" pattern="^\d{4}$" placeholder="4-digit Postal Code" required />
                 </label>
@@ -102,42 +98,41 @@
             </div>
 
             <div class="row-container">
-              <div class="left">
+              <div>
                 <label for="email">Email Address
-                <input id="email" name="email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+                <input id="email" name="email" type="email" pattern="^[a-zA-Z\s]{1,20}$" required />
                 </label>
               </div>
-              <div class="right">
+              <div>
                 <label for="phone">Phone Number
-                <input id="phone" name="phone" type="tel" pattern="^[0-9\s]{8,12}$" required />
+                <input id="phone" name="phone" type="tel" pattern="^[a-zA-Z\s]{1,20}$" required />
                 </label>
               </div>
             </div>
             
-          <div class="skill-section">
-            <label for="skill">Skills list
-            </label>
-            <div class="skills">
-              <label>
-              <input type="checkbox" name="skill-a"> Programming
+            <div class="skill-section">
+              <label for="skill">Skills list
               </label>
-              <label>
-              <input type="checkbox" name="skill-b"> Data Management & Database System
-              </label>
-              <label>
-              <input type="checkbox" name="skill-c"> Machine Learning
-              </label>
-              <label>
-              <input type="checkbox" id="other-skills-checkbox" name="other-skills-checkbox" class="other-skills inline"> Other skills
-              </label>
-              <textarea id="other-skills-textarea" placeholder="Type your other skills here..."></textarea>
-              <p>Attention: Kindly ensure that all sections of the form are filled out, as they are mandatory.</p>
+              <div class="skills">
+                <label>
+                <input type="checkbox" name="skill-a"> Programming
+                </label>
+                <label>
+                <input type="checkbox" name="skill-b"> Data Management & Database System
+                </label>
+                <label>
+                <input type="checkbox" name="skill-c"> Machine Learning
+                </label>
+                <label>
+                <input type="checkbox" id="other-skills-checkbox" name="other-skills-checkbox" class="other-skills inline"> Other skills
+                </label>
+                <textarea id="other-skills-textarea" placeholder="Type your other skills here..."></textarea>
+                <p>Attention: Kindly ensure that all sections of the form are filled out, as they are mandatory.</p>
+              </div>
             </div>
-          </div>
 
             <button type="submit" class="submit-btn">Apply</button>
             <div class="submitted-message"></div>
-          </fieldset>
         </form>
       </section>
     </main>
