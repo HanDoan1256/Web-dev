@@ -1,7 +1,12 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20:wght@400;700&display=swap');
+
+
 /*Body*/
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jersey 20', sans-serif;
     margin: 0;
     padding: 0;
     background: #000;
@@ -11,7 +16,7 @@ body {
 /* Navigation Bar */
 
 header {
-    background: #2c40c6;
+    background: #1b1c55;
     padding: 30px 20px;
     margin-top: 80px;
 }
@@ -56,31 +61,31 @@ nav ul a.active {
 /* Banner */
 
 .apply-banner {
-    text-align: left;
+    text-align: center;
     margin: 20px 0;
 }
 
 .apply-banner h1 span {
     color: yellow;
-    font-size: 40px;
+    font-size: 60px;
     font-style: italic;
 }
 
 .apply-banner h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-style: italic;
 }
 
 .apply-banner button {
     background: white;
     color: black;
-    border-radius: 10px;
     border-width: 3px;
     font-size: 18px;
     font-weight: bold;
-    font-family: Arial, sans-serif;
-    margin-left: 30px;
+    font-family: 'Jersey 20', sans-serif;
     width: 150px;
+    height: 40px;
+    margin-left: 12px;
 }
 
 
@@ -259,13 +264,11 @@ footer {
     color: white;
     margin-bottom: 50px;
 }
-
 footer h3 {
     color: #fff;
     font-size: 50px;
     font-family: 'Jersey 20', sans-serif;
 }
-
 footer p {
     font-size: 20px;
     color: #fffcfc;
@@ -318,6 +321,7 @@ footer p {
     display: block;
     margin: auto;
     text-align: center;
+    font-family: 'Jersey 20'
 }
 
 .submitted-message {
@@ -325,6 +329,7 @@ footer p {
     color: green;
     font-weight: bold;
     text-align: center;
+    font-family: 'Jersey 20'
 }
 
 .submit-btn:focus + .submitted-message {
