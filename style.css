@@ -902,3 +902,29 @@ footer p {
 }
 
 .footer-section a:hover {text-decoration: underline;}
+/*enhancement*/
+.enhancement table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 0 auto; 
+            color: white;
+            line-height: 20px;
+           
+        }
+        th, td {
+            padding: 15px;
+            margin: 0;
+            border: 1px solid #FFFCFC;
+            vertical-align: top;
+            table-layout: fixed;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            text-align;: left;
+            height: 90px; 
+            position: relative;
+            padding: 10px; 
+        }
