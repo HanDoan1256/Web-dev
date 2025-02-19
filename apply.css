@@ -219,6 +219,53 @@ select {
     width: 355px;
 }
 
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Tooltip text (hidden by default) */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Skill List */
 .skills {
     display: flex;
