@@ -208,19 +208,19 @@
             position: relative;
             padding: 5px; 
         }
-        .TNE, .VOV, .STA, .COS {
+        .TNE-1, .TNE-2, .VOV-1,.VOV-2, .STA-1,.STA-2, .COS, .MDA {
             background-color: #1b1c55;
             color: #FFFCFC;
             padding: 10px;
             border-radius: 5px;
             font-size: 1.4vw;
-            margin-TOP: 3px; 
+            margin-TOP: 4px; 
         }
-        .empty-cell {
+        .cell {
             background-color: #000612;
         }
-        .TNE:hover::after, .COS:hover::after, .STA:hover::after, .VOV:hover::after {
-            content: "Class: TNE"; 
+        .TNE-1:hover::after, .TNE-2:hover::after, .COS:hover::after, .STA-1:hover::after, .STA-2:hover::after, .VOV-1:hover::after, .VOV-2:hover::after,  .MDA:hover::after {
+            content: "Class: TNE - Han, Nhu, Minh"; 
             position: absolute;
             top: 0;
             left: 0;
@@ -231,14 +231,26 @@
             border-radius: 3px;
             z-index: 10;
         }
-        .STA:hover::after {
-            content: "Class: STA";
+        .TNE-2:hover::after {
+            content: "Class: TNE - Duong";
         }
-        .VOV:hover::after {
-            content: "Class: VOV";
+        .STA-1:hover::after {
+            content: "Class: STA - Han, Nhu";
+        }
+        .STA-2:hover::after {
+            content: "Class: STA - Duong";
+        }
+        .VOV-1:hover::after {
+            content: "Class: VOV - Han, Minh";
+        }
+        .VOV-2:hover::after {
+            content: "Class: STA - Duong, Nhu";
         }
         .COS:hover::after {
-            content: "Class: COS";
+            content: "Class: COS - Duong, Han, Nhu, Minh";
+        }
+        .MDA:hover::after{
+            content: "Class: MDA - Minh"
         }
         .about {
             width: 90%;
@@ -422,7 +434,7 @@
                 <h3>Doan Gia Han</h3>
                 <p><strong>Student ID: 105506817</strong></p>
                 <p><strong>Email:</strong> <a href="mailto:handoangia2612@gmail.com">handoangia2612@gmail.com</a></p>
-                <p><strong>Major: </strong></p>
+                <p><strong>Major: Data Science</strong></p>
             </div>
             <img src="Han.jpg" alt="Doan Gia Han">
         </div>
@@ -433,7 +445,7 @@
                 <h3>Ngo Quynh Nhu</h3>
                 <p><strong>Student ID: 105312140</strong></p>
                 <p><strong>Email:</strong> <a href="mailto:quynhnhungo06@gmail.com">quynhnhungo06@gmail.com</a></p>
-                <p><strong>Major:</strong></p>
+                <p><strong>Major: Cyber Security</strong></p>
             </div>
         </div>
 
@@ -442,7 +454,7 @@
                 <h3>Vo Nguyen Minh</h3>
                 <p><strong>Student ID: 105505636</strong></p>
                 <p><strong>Email:</strong> <a href="mailto:nguyenminhvo2802@gmail.com">nguyenminhvo2802@gmail.com</a></p>
-                <p><strong>Major: </strong></p>
+                <p><strong>Major: Data Science </strong></p>
             </div>
             <img src="NGUYENMINH.jpg" alt="Vo Nguyen Minh">
         </div>
@@ -462,71 +474,91 @@
                     <th>Sat</th>
                 </tr>
                 <tr>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell">
-                        <div class="TNE">07:00 - 11:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="MDA">13:00 - 16:00</div>
+                        <div class="TNE-2">13:00 - 17:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="VOV">10:00 - 13:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="TNE-1">07:00 - 11:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="STA">07:00 - 10:00</div>
+                    <td class="cell">
+                        <div class="VOV-1">10:00 - 13:00</div>
                     </td>
-                    <td class="empty">
+                    <td class="cell">
+                        <div class="STA-1">07:00 - 10:00</div>
+                        <div class="VOV-2">10:00 - 13:00</div>
+                    </td>
+                    <td class="cell">
                         <div class="COS">07:00 - 11:00</div>
+                        <div class="STA-2">13:00 - 16:00</div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell">
-                        <div class="TNE">07:00 - 11:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="MDA">13:00 - 16:00</div>
+                        <div class="TNE-2">13:00 - 17:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="VOV">10:00 - 13:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="TNE-1">07:00 - 11:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="STA">07:00 - 10:00</div>
+                    <td class="cell">
+                        <div class="VOV-1">10:00 - 13:00</div>
                     </td>
-                    <td class="empty">
+                    <td class="cell">
+                        <div class="STA-1">07:00 - 10:00</div>
+                        <div class="VOV-2">10:00 - 13:00</div>
+                    </td>
+                    <td class="cell">
                         <div class="COS">07:00 - 11:00</div>
+                        <div class="STA-2">13:00 - 16:00</div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell">
-                        <div class="TNE">07:00 - 11:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="MDA">13:00 - 16:00</div>
+                        <div class="TNE-2">13:00 - 17:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="VOV">10:00 - 13:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="TNE-1">07:00 - 11:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="STA">07:00 - 10:00</div>
+                    <td class="cell">
+                        <div class="VOV-1">10:00 - 13:00</div>
                     </td>
-                    <td class="empty">
+                    <td class="cell">
+                        <div class="STA-1">07:00 - 10:00</div>
+                        <div class="VOV-2">10:00 - 13:00</div>
+                    </td>
+                    <td class="cell">
                         <div class="COS">07:00 - 11:00</div>
+                        <div class="STA-2">13:00 - 16:00</div>
                     </td>
                 </tr>
                 <tr>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell"></td>
-                    <td class="empty-cell">
-                        <div class="TNE">07:00 - 11:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="MDA">13:00 - 16:00</div>
+                        <div class="TNE-2">13:00 - 17:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="VOV">10:00 - 13:00</div>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="TNE-1">07:00 - 11:00</div>
                     </td>
-                    <td class="empty">
-                        <div class="STA">07:00 - 10:00</div>
+                    <td class="cell">
+                        <div class="VOV-1">10:00 - 13:00</div>
                     </td>
-                    <td class="empty">
+                    <td class="cell">
+                        <div class="STA-1">07:00 - 10:00</div>
+                        <div class="VOV-2">10:00 - 13:00</div>
+                    </td>
+                    <td class="cell">
                         <div class="COS">07:00 - 11:00</div>
+                        <div class="STA-2">13:00 - 16:00</div>
                     </td>
                 </tr>
             </table>
@@ -556,7 +588,7 @@
           <div class="footer-section">
             <p>Helpdesk</p>
             <p><a href="#">Career Helpdesk</a></p>
-            <p><a href="#">Email</a></p>
+            <p><a href="mailto:bluematrix2025@gmail.com">Email</a></p>
           </div>
           <div class="footer-section">
             <p>About Us</p>
