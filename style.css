@@ -1,112 +1,48 @@
 /* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Jersey+20:wght@400;700&display=swap');
 
 /*general setup*/
-body {
+body {  
     font-family: 'Jersey 20', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #000612;
-    color: #fffcfc;
 }
-h1 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:120px; margin-bottom: 5px;}
-h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size:80px; margin-bottom: 5px;}
-/*Han*/
-h3 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:60px; margin-bottom: 5px;}
-h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
-.typewriter {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
-.typewriter-text::before {
-    content: "Software Developer";
-    font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px;
-    animation: words 6s steps(20) infinite;
-}
+h1 {font-family: 'Jersey 20', sans-serif;color: #e8d240;font-size: 5rem; font-size: clamp(3.125rem, 10vw, 7.5rem); margin-bottom: 5px;}
+h2 {font-family: 'Jersey 20', sans-serif;color: #e8d240; font-size: 1.875rem; font-size: clamp(1.875rem, 7vw, 5rem); margin-bottom: 5px;}
+h3 {font-family: 'Jersey 20', sans-serif; color: #e8d240; font-size: 1.25rem; font-size: clamp(1rem, 6vw, 3.125rem);margin-bottom: 5px;}
+p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 0.625rem; font-size: clamp(0.625rem, 2vw, 1.5625rem); margin-top: 5px;}
 
-@keyframes words {
-    0%, 33% {
-        content: " Software Developer";
-    }
-    34%, 66% {
-        content: " Data Analyst";
-    }
-    67%, 100% {
-        content: " Senior Backend Engineer";
-    }
-}
-
-section a {
-            color:#FFFCFC;
-            text-decoration: none;
-        }
-.job-images { display: flex; justify-content: space-between; margin: 20px 0; color:#FFFCFC; 
-             overflow-x: auto;
-            white-space: nowrap;
-            padding: 10px 0 30px 0;
-            white-space: nowrap;}
-.job-images img { width: 100%; height: 400px; border: 2px solid #fff }
-.job-images img:hover {
-    transform: scale(1.05);
-}
-.job-container { display: flex; align-items: center; margin-bottom: 20px; }
-.job-container img { width: 35%; height: auto; margin-right: 20px; }
-.job-details { flex: 1; }
-details {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px }
-summary { cursor: pointer; font-weight: bold; font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 25px; margin-top: 5px }
-.aside-container {
-    display: flex; /* Side-by-side layout */
-    align-items: center; /* Ensure both elements have equal height */
-    gap: 5px; /* Space between aside and video */
-}
-aside {
-    border: 2px #fffcfc ; 
-    padding: 20px; 
-    margin: 20px 0; 
-    background-color: #3c3b3b;
-    color: white;
-    width: 25%;
-    order: 2;
-}
-video {
-    flex: 1; /* Make video flexible */
-    object-fit: cover; /* Ensure the video fills its box without distortion */
-    height: 100%; /* Match the height of the aside box */
-    width: 75%;
-    order:1;
-}
-/*Han*/
-p {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px;}
+/*duong - index*/
 header {
-    color: white;
+    color: #fffcfc;
     text-align: center;   
     }
+/*nav bar*/
 nav {
-    
-    margin: auto;
-    display: flex;
     position: absolute; /* Places navbar over the intro */
-    top: 10px;
+    top: 20px;
     left: 70px;
     right: 70px;
     width: 90%; 
     display: flex;
     justify-content: center;
     z-index: 10; 
-    border: 2px solid white;
+    border: 2px solid #fffcfc;
 }
 nav ul{
     align-items: center;
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
     gap: 70px;
     width: 100%;
-    
+    flex-wrap: wrap;
 }
 nav ul a{
     color: #fffcfc;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
 }
 nav ul a:hover {
     color: #e8d240;
@@ -114,60 +50,105 @@ nav ul a:hover {
 nav ul a.active {
     color: #e8d240;
 }
-
-.intro {
+/* intro image and content*/
+.intro-content {
     position: relative;
     background-image: url("images/bg.png"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    height: 780px;
-    width: cover;
+    height: 100vh;
+    width: 100%;
     place-content: center;
-    min-block-size: 80vh;
+    min-block-size: 20vh;
     text-align: left;
-    padding-left: 80px;
+    padding-left: 70px;
 }
+@media (max-width: 995px) {
+    nav {
+        display: none;
+        width: 90%;
+        border: 2px solid #fffcfc;
+        padding: 1rem solid;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
 
-.intro h3 {
+    nav ul {
+        gap: 10px;
+        align-items:center;
+    }
+
+    nav ul a {display:flex; width: 100%; padding: 10px; font-size: 0.825rem;}
+    nav.active {
+        display:flex;
+        transform: translateX(0);
+    }
+
+    .intro-content {
+        background-size: contain; 
+        background-attachment: scroll; 
+        height: 80vh; 
+        padding-left: 40px; 
+    }
+    .companyintro { 
+        margin: 2rem 0 2rem;
+    }
+}
+.intro-content h3 {
     color: #fffcfc;
-    font-size: 50px;
     margin-top: 5px;
 }
-
+/*youtube link and introduction*/
 .companyintro {
     position: relative;
-    height: 760px;
-    width: cover;
     text-align: right;
     padding-right: 80px;
     display: flex;
     gap: 20px;
     align-items: center;
+    margin: 6.25rem 0 6.25rem;
 }
 
 .companyintro img {
     float: left;
-    margin-right: 20px; /* Adds space between image and text */
-    width: 600px;
-    height: 500px;
+    margin-right: 2vh; /* Adds space between image and text */
+    width: clamp(300px, 35vw, 650px);
+    height: auto;
     margin-left: 80px;
     border: 2px solid #fff;
     margin-top: 20px;
+
 }
 
 .companyintro .content {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: 650px;
+    height: auto;
     padding-left: 100px;
-    
+    max-width:600px;
 }
+@media (max-width: 995px) {  
+    .companyintro {
+        flex-direction: column; 
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+        align-items: center;
+    }
 
+    .companyintro .content {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+/*projects section */
 .pjcts {
-    height: 760px;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .pjcts h2 {
@@ -183,21 +164,20 @@ nav ul a.active {
     padding: 10px 0 50px 0;
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    
-    gap: 100px; /* Ensures spacing if <a> elements are flex children */
+    gap: clamp(30px, 5vw, 100px); 
 }
 
 .img-container a {
-    display: flex; /* Ensures that <a> takes flex properties */
-    margin-right: 80px; /* Ensures spacing if gap fails */
+    display: flex; 
+    margin-right: 80px; 
 }
 
 .img-container a:last-child {
-    margin-right: 0; /* Removes extra space after the last image */
+    margin-right: 0; 
 }
 
 .img-container img {
-    width:550px;
+    width: clamp(300px, 40vw, 550px);
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
@@ -207,7 +187,7 @@ nav ul a.active {
 .img-container img:hover {
     transform: scale(1.05);
 }
-
+/*intro team section */
 .introteam {
     text-align: center;
 }
@@ -216,11 +196,14 @@ nav ul a.active {
 .introteam a {font-size: 20px;}
 .pic-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px 5px;
+    grid-template-columns: (1fr);
+    gap: 50px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    grid-auto-rows: 1fr;
+    @media (width >= 60em) { grid-template-columns: repeat(2, 1fr);};
+    @media (width>= 40em) { grid-template-columns: repeat(2, 1fr);};
 }
 
 figure {
@@ -231,7 +214,7 @@ figure {
 }
 
 figure img {
-    width: 350px; 
+    max-width: 300px; 
     height: 400px;
     object-fit: cover;
     border: 2px solid #fff;
@@ -239,28 +222,655 @@ figure img {
 
 figcaption {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.25rem, 20px);
     font-weight: bold;
     color: #fffcfc;
     text-align: center;
 }
+/*end of duong-index*/
+
+/*han jobs*/
+h4 {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
+.jobs-header{margin-top: 150px;}
+.typewriter {font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px; margin-bottom: 5px;}
+.typewriter-text::before {
+    content: "Software Developer";
+    font-family: 'Jersey 20', sans-serif;color: #fffcfc; font-size:30px;
+    animation: words 6s steps(20) infinite;
+}
+@keyframes words {
+    0%, 34% {
+        content: "Software Developer";
+    }
+    35%, 69% {
+        content: " Data Analyst";
+    }
+    70%, 100% {
+        content: " Senior Backend Engineer";
+    }
+}
+.job-container h2 {
+    color: #e8d240;
+    text-align: left;
+}
+section a {
+            color:#FFFCFC;
+            text-decoration: none;
+        }
+.job-images { display: flex; justify-content: space-between; margin: 20px 0; color:#FFFCFC; 
+             overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px 0 30px 0;
+            white-space: nowrap;}
+.job-images img { width: 100%; height: 400px; border: 2px solid #fff }
+.job-images img:hover {
+    transform: scale(1.05);
+}
+.job-container { display: flex; align-items: center; margin-bottom: 20px; }
+.job-container img { width: 35%; height: auto; margin-right: 20px; }
+.job-details { flex: 1;  }
+.job-details p {text-align: left;}
+details {font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 20px; margin-top: 5px; text-align: left; }
+summary { cursor: pointer; font-weight: bold; font-family: 'Inter', sans-serif; color: #fffcfc; font-size: 25px; margin-top: 5px }
+.aside-container {
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+}
+aside {
+    border: 2px #fffcfc ; 
+    padding: 20px; 
+    margin: 20px 0; 
+    background-color: #3c3b3b;
+    color: white;
+    width: 25%;
+    order: 2;
+}
+video {
+    flex: 1; 
+    object-fit: cover; 
+    height: 100%; 
+    width: 75%;
+    order:1;
+}
+/*end of han jobs.html*/
+
+/*minh-apply.html*/
+header .apply-banner {
+    background: #1b1c55;
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+
+/* Banner */
+
+.apply-banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.apply-banner h1 span {
+    color: yellow;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.apply-banner h1 {
+    font-size: 60px;
+    font-style: italic;
+}
+
+.apply-banner button {
+    background: white;
+    color: black;
+    border-width: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Jersey 20', sans-serif;
+    width: 150px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+
+.application-form {
+    background: #111;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.application-form h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+
+section p {
+    text-align: center;
+}
+
+#apply p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: none;
+    padding: 20px;
+    font-size: 17px;
+    color: #e8d240;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; 
+}
+
+input {
+  margin-top: 10px;
+}
+
+.left {
+    width: 40%;
+    float: left;
+}
+
+.right {
+    width: 40%;
+    float: right;
+}
+
+.left label {
+    width: 100%
+}
+
+.right label  {
+    width: 100%;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 23px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border: 4px solid white;
+}
+
+textarea {
+    height: 80px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+fieldset {
+    border: none; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right {
+  display: flex;
+  gap: 20px; 
+}
+
+.radio-left {
+    float: left;
+    border: 4px solid white;
+    padding: 6px;
+    width: 210px;
+}
+
+.radio-right {
+    float: right;
+    border: 4px solid white;
+    padding: 6px;
+    width: 210px;
+}
+
+#gencap {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-right: 80px;
+    font-size: 19px;
+}
+
+.state-select {
+    float: right;
+    width: 300px;
+    height: 114px;
+}
+
+select {
+    width: 355px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Tooltip text (hidden by default) */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Skill List */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.skills input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.skill-section {
+    display: inline-block;
+}
+
+.skills textarea {
+    width: 600px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.skill-section p {
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+/* Submit Button */
+
+.submit-btn {
+    background: yellow;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 370px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Jersey 20'
+}
+
+.submitted-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Jersey 20'
+}
+
+.submit-btn:focus + .submitted-message {
+    display: block;
+    content: "Submitted!";
+}
+
+.submit-btn:focus {
+    color: white;
+    background-color: green;
+    outline: none;
+    visibility: hidden;
+}
+
+.submit-btn:focus span {
+    display: none;
+}
+
+/*end of minh-apply.html*/
+
+/*nhu-abouthtml*/
+a {
+    color:#FFFCFC;
+    text-decoration: none;
+}
+.defition a {
+    color:#000612;
+    text-decoration: none;
+}
+
+.definition-container h2{
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    border: 2px solid #FFFCFC;
+    padding: 1px;
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    background-image: url('images/grouppic.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.intro h1 {
+    font-size: 7vw;
+    color: #1b1c55;
+    margin-top: 20px;
+}
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    margin-top: 230px;
+}
+section h2 {
+    text-align: center;
+}
+span{
+    color: #fffcfc;
+}
+.definition {
+    width: 100%;
+    margin: 0 auto;
+}
+.definition-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; 
+}
+.defi {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    align-items: left;
+}   
+dl {
+    width: 75%;
+    background-color: #FFFCFC;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 22%;
+    margin-top: 10px;
+}
+dt, dd {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+dt {
+    font-weight: bold;
+    color: #000612;
+    width: 30%; 
+    text-align: left;
+    margin-left: 10px;
+}
+dd {
+    width: 65%; 
+    color: #000612;
+    line-height: 1.6;
+    margin-left: 0;
+    text-align: left;
+}
+.definition a {
+    color: #000612;
+    text-decoration: none;
+}
+.defi figure img{
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border: 2px solid #FFFCFC;
+    transition: transform 0.3s ease;
+    margin-top: 0;
+    margin-right: 150px;
+}
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 90%;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+.team-member img {
+    width: 100%; 
+    height: 100%;
+    max-width: 350px;
+    height: 370px; 
+    object-fit: cover; 
+    border: 2px solid #FFFCFC;
+    transition: transform 0.3s ease;
+}
+.team-info {
+    position: relative;
+    border: 2px solid #FFFCFC;
+    padding: 20px;
+    width: 90%; 
+    max-width: 620px; 
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7vw;
+    margin: 0 auto; 
+}
+.team-info h3 {
+    margin-top: 20px;
+    color: #E8D240;
+    font-size: 2.4vw;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+th, td {
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #FFFCFC;
+    text-align: center;
+    vertical-align: top;
+    width: 14.28%; 
+}
+th {
+    background-color: #000612;
+    font-weight: bold;
+    color: #fffcfc;
+}
+td {
+    height: 90px; 
+    position: relative;
+    padding: 5px; 
+}
+.TNE-1, .TNE-2, .VOV-1,.VOV-2, .STA-1,.STA-2, .COS, .MDA {
+    background-color: #1b1c55;
+    color: #FFFCFC;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.4vw;
+    margin-TOP: 4px; 
+}
+.cell {
+    background-color: #000612;
+}
+.TNE-1:hover::after, .TNE-2:hover::after, .COS:hover::after, .STA-1:hover::after, .STA-2:hover::after, .VOV-1:hover::after, .VOV-2:hover::after,  .MDA:hover::after {
+    content: "Class: TNE - Han, Nhu, Minh"; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    z-index: 10;
+}
+.TNE-2:hover::after {
+    content: "Class: TNE - Duong";
+}
+.STA-1:hover::after {
+    content: "Class: STA - Han, Nhu";
+}
+.STA-2:hover::after {
+    content: "Class: STA - Duong";
+}
+.VOV-1:hover::after {
+    content: "Class: VOV - Han, Minh";
+}
+.VOV-2:hover::after {
+    content: "Class: VOV - Duong, Nhu";
+}
+.COS:hover::after {
+    content: "Class: COS - Duong, Han, Nhu, Minh";
+}
+.MDA:hover::after{
+    content: "Class: MDA - Minh"
+}
+.about {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #1b1c55;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.about .row .image-container{
+    flex: 1 1 300px;
+    text-align: center;
+    max-width: 350px;
+    padding: 50px;
+}
+.about .row .image-container img{
+    width: 100%; 
+    max-width: 350px;
+    height: 100%; 
+    max-height: 350px;
+    border: 6px solid #FFFCFC;
+    object-fit: cover; 
+    margin-left: 20%;
+}
+.about .row .content{
+    flex: 1 1 20px;
+    font-size: 20px;
+}
+.about .row .content h1{
+    font-size: 30px;
+}
+.text-container h3 {
+font-size: 36px;
+margin-bottom: 20px;
+color: #FFFCFC;
+}
+@media (max-width: 995px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-info {
+        width: 100%;
+        text-align: center;
+    }
+    .team-member img {
+        width: 100%; 
+        height: 250px;
+        object-fit: cover; 
+    }
+    .team-info {
+        width: 100%; 
+        text-align: center; 
+    }
+}
+
+/*end of nhu-abouthtml*/
 
 footer {
     clear: both;
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 2%;
     color: white;
     margin-bottom: 50px;
 }
-footer h3 {
-    color: #fff;
-    font-size: 50px;
-    font-family: 'Jersey 20', sans-serif;
-}
+
 footer p {
-    font-size: 20px;
     color: #fffcfc;
     margin: 5px 0;
 }
@@ -268,9 +878,8 @@ footer p {
 .footer-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
     margin-top: 5px;
-    font-family: Helvetica;
+    gap: clamp(20px, 2.604vw, 50px);
 }
 
 .footer-section {
@@ -284,7 +893,6 @@ footer p {
     font-weight: bold;
     color: white;
     margin-bottom: 8px;
-    font-size: 16px;
 }
 
 .footer-section a {
@@ -293,6 +901,4 @@ footer p {
     font-size: 14px;
 }
 
-.footer-section a:hover {
-    text-decoration: underline;
-}
+.footer-section a:hover {text-decoration: underline;}
