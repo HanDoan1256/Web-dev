@@ -640,7 +640,7 @@ a {
         .definition-container {
             display: flex;
             justify-content: flex-start;
-            gap: 100px; 
+            gap: 150px; 
             margin-top: 20px;
         }
         .defi {
@@ -649,7 +649,7 @@ a {
             justify-content: flex-start;
             width: 30%;
             align-items: left;
-            gap:20px;
+            gap: 20px;
         }   
         dl {
             width: 75%;
