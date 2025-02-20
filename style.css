@@ -609,7 +609,7 @@ a {
             background-image: url('grouppic.png');
             background-size: cover;
             background-position: center;
-            padding: 150px;
+            margin-top: 150px;
         }
         .intro h1 {
             font-size: 7vw;
@@ -635,11 +635,13 @@ a {
         .definition {
             width: 100%;
             margin: 0 auto;
+            margin-top: 50px;
         }
         .definition-container {
             display: flex;
             justify-content: flex-start;
-            gap: 10px; 
+            gap: 40px; 
+            margin-top: 20px;
         }
         .defi {
             display: flex;
@@ -647,6 +649,7 @@ a {
             justify-content: flex-start;
             width: 30%;
             align-items: left;
+            gap:20px;
         }   
         dl {
             width: 75%;
