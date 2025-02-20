@@ -846,7 +846,19 @@ a {
     nav ul {
                 flex-direction: column;
                 align-items: center;
+                padding: 20px;
             }
+    .definition {
+        width: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .defi figure img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 10px 0;
+    }
             .team-member {
                 flex-direction: column;
                 text-align: center;
