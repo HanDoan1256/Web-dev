@@ -746,7 +746,7 @@ a {
             width: 14.28%; 
         }
         th {
-            background-color: #FFFCFC;
+            font-color: #FFFCFC;
             font-weight: bold;
         }
         td {
