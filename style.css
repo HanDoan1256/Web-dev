@@ -827,14 +827,16 @@ a {
             flex: 1 1 20px;
             font-size: 20px;
         }
-        .about .row .content h1{
-            font-size: 30px;
-        }
     .text-container h3 {
         font-size: 36px;
         margin-bottom: 20px;
         color: #FFFCFC;
     }
+.about .row .content p{
+            flex: 1 1 20px;
+            font-size: 20px;
+            text-align: left;
+        }
 @media (max-width: 995px) {
     nav ul {
                 flex-direction: column;
