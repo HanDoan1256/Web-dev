@@ -684,7 +684,7 @@ dd {
 }
 .defi figure img{
     width: clamp<100px, 15vw, 200px);
-    height: auto; 
+    height: 100%; 
     object-fit: cover; 
     border: 2px solid #FFFCFC;
     transition: transform 0.3s ease;
