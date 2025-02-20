@@ -597,10 +597,6 @@ a {
     text-decoration: none;
 }
 
-.definition-container h2{
-    text-align: center;
-}
-
 .intro {
     text-align: center;
     border: 2px solid #FFFCFC;
@@ -688,6 +684,8 @@ dd {
     object-fit: cover; 
     border: 2px solid #FFFCFC;
     transition: transform 0.3s ease;
+    margin-top: 3%;
+    margin-right: 350px;
 }
 .team-member {
     display: flex;
@@ -702,7 +700,7 @@ dd {
 .team-member img {
     max-width: 350px;
     width: 100%;
-    height: auto;
+    height: 370px;
     border: 2px solid #FFFCFC;
 }
 .team-info {
