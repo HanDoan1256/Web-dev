@@ -683,7 +683,8 @@ dd {
     text-decoration: none;
 }
 .defi figure img{
-    width: clamp<100px, 15vw, 200px);
+    max-width: 200px;
+    width: 100%;
     height: 100%; 
     object-fit: cover; 
     border: 2px solid #FFFCFC;
@@ -700,7 +701,8 @@ dd {
     overflow: hidden;
 }
 .team-member img {
-    width: clamp(150px, 20vw, 250px);
+    max-width: 350px;
+    width: 100%;
     height: auto;
     border: 2px solid #FFFCFC;
 }
