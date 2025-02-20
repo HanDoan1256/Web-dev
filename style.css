@@ -609,6 +609,7 @@ a {
             background-image: url('grouppic.png');
             background-size: cover;
             background-position: center;
+            padding: 150px;
         }
         .intro h1 {
             font-size: 7vw;
