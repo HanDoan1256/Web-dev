@@ -922,6 +922,7 @@ footer p {
 }
 
 .footer-section a:hover {text-decoration: underline;}
+
 /*enhancement*/
 .enhancement_table table {
             width: 90%;
@@ -943,7 +944,7 @@ footer p {
             text-align: center;
         }
         td {
-            text-align: left;
+            text-align: center;
             height: 90px; 
             position: relative;
             padding: 10px; 
