@@ -703,7 +703,6 @@ dd {
     width: clamp(150px, 20vw, 250px);
     height: auto;
     border: 2px solid #FFFCFC;
-    transition: transform 0.3s ease;
 }
 .team-info {
     position: relative;
@@ -721,9 +720,8 @@ dd {
     margin: 0 auto; 
 }
 .team-info h3 {
-    margin-top: 20px;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     color: #E8D240;
-    font-size: 2.4vw;
 }
 table {
     width: 90%;
@@ -732,7 +730,6 @@ table {
 }
 th, td {
     padding: 10px;
-    margin: 0;
     border: 1px solid #FFFCFC;
     text-align: center;
     vertical-align: top;
@@ -813,28 +810,28 @@ td {
     padding: 50px;
 }
 .about .row .image-container img{
-    width: 100%; 
-    max-width: 350px;
-    height: 100%; 
-    max-height: 350px;
+    width: clamp(200px, 50vw, 400px);
     border: 6px solid #FFFCFC;
     object-fit: cover; 
     margin-left: 20%;
 }
 .about .row .content{
     flex: 1 1 20px;
-    font-size: 20px;
+    max-width: 600px;
+    text-align: center;
 }
-.about .row .content h1{
-    font-size: 30px;
+.about .content h3 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #E8D240;
 }
-.text-container h3 {
-font-size: 36px;
-margin-bottom: 20px;
-color: #FFFCFC;
+
+.about .content p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #FFFCFC;
+    line-height: 1.5;
 }
 @media (max-width: 995px) {
-    .team-member {
+    .definition-container, .team-member {
         flex-direction: column;
         text-align: center;
     }
@@ -842,14 +839,8 @@ color: #FFFCFC;
         width: 100%;
         text-align: center;
     }
-    .team-member img {
-        width: 100%; 
-        height: 250px;
-        object-fit: cover; 
-    }
-    .team-info {
-        width: 100%; 
-        text-align: center; 
+     .about .row {
+        flex-direction: column;
     }
 }
 
