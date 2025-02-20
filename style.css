@@ -689,6 +689,9 @@ dd {
     border: 2px solid #FFFCFC;
     transition: transform 0.3s ease;
 }
+defi img:hover {
+    transform: scale(1.1);
+}
 .team-member {
     display: flex;
     justify-content: center;
