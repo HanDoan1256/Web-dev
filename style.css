@@ -932,38 +932,38 @@ footer p {
             line-height: 20px;
            
         }
-        table th:nth-child(1), table td:nth-child(1) {
+.enhancement_table table th:nth-child(1), table td:nth-child(1) {
             width: 5%;
         }
 
-        table th:nth-child(2), table td:nth-child(2) {
+.enhancement_table table th:nth-child(2), table td:nth-child(2) {
             width: 15%;
         }
-        table th:nth-child(3), table td:nth-child(3) {
+.enhancement_table table th:nth-child(3), table td:nth-child(3) {
             width: 30%;
         }
 
-        table th:nth-child(4), table td:nth-child(4) {
+.enhancement_table table th:nth-child(4), table td:nth-child(4) {
             width: 50%;
         }
-        th, td {
+.enhancement_table th, td {
             padding: 15px;
             margin: 0;
             border: 1px solid #FFFCFC;
             vertical-align: top;
             table-layout: fixed;
         }
-        th {
+.enhancement_table th {
             font-weight: bold;
             text-align: center;
         }
-        td {
+.enhancement_table td {
             text-align: center;
             height: 90px; 
             position: relative;
             padding: 10px; 
         }
-        video {
+.enhancement_table video {
             flex: 1; 
         object-fit: cover; 
         height: 100%; 
