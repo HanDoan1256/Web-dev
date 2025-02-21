@@ -932,11 +932,12 @@ footer p {
             line-height: 20px;
            
         }
-        nth-child(1) {
-                width: 10%;
+        table th:nth-child(1), table td:nth-child(1) {
+            width: 10%;
         }
-        nth-child(4) {
-                width: 40%;
+
+        table th:nth-child(4), table td:nth-child(4) {
+            width: 40%;
         }
         th, td {
             padding: 15px;
