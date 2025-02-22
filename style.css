@@ -924,49 +924,4 @@ footer p {
 
 .footer-section a:hover {text-decoration: underline;}
 
-/*enhancement*/
-.enhancement_table table {
-            width: 90%;
-            border-collapse: collapse;
-            margin: 0 auto; 
-            color: white;
-            line-height: 20px;
-           
-        }
-.enhancement_table table th:nth-child(1), table td:nth-child(1) {
-            width: 5%;
-        }
 
-.enhancement_table table th:nth-child(2), table td:nth-child(2) {
-            width: 15%;
-        }
-.enhancement_table table th:nth-child(3), table td:nth-child(3) {
-            width: 30%;
-        }
-
-.enhancement_table table th:nth-child(4), table td:nth-child(4) {
-            width: 50%;
-        }
-.enhancement_table th, td {
-            padding: 15px;
-            margin: 0;
-            border: 1px solid #FFFCFC;
-            vertical-align: top;
-            table-layout: fixed;
-        }
-.enhancement_table th {
-            font-weight: bold;
-            text-align: center;
-        }
-.enhancement_table td {
-            text-align: center;
-            height: 90px; 
-            position: relative;
-            padding: 10px; 
-        }
-.enhancement_table video {
-            flex: 1; 
-        object-fit: cover; 
-        height: 100%; 
-        width: 75%;
-        }
